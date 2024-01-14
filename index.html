@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript addEventListener() Hands-On</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: gray;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript addEventListener() Hands-On</h1>
+
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+    <button id="button3">Button 3</button>
+
+    <script>
+        function handleClickButton1() {
+            alert("Button 1 was clicked!");
+        }
+
+        function handleClickButton2() {
+            alert("Button 2 was clicked!");
+        }
+
+        function handleClickButton3() {
+            alert("Button 3 was clicked!");
+        }
+
+        document.getElementById("button1").addEventListener("click", handleClickButton1);
+        document.getElementById("button2").addEventListener("click", handleClickButton2);
+        document.getElementById("button3").addEventListener("click", handleClickButton3);
+    </script>
+
+</body>
+</html>
